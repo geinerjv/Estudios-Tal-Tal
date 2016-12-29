@@ -11,18 +11,80 @@
 	box-sizing: border-box;
 }
 
-header{
-	width: 80%;
-	max-width: 1000px;
-	background: red;
-	margin: 0 auto;
+header{	
 	background: #08454c;
 	padding: 15px;
  }
 
-header h1{
+header h1, h6{
 	text-align: center;
     font-family: 'Exo', sans-serif;
 	color:white;
 }
+
+nav{	
+	background: #012023;	
+}
+
+nav ul{
+	list-style: none;	
+	text-align: center;
+}
+
+nav ul li{
+	display: inline-block;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: white;
+	display: block;
+	padding: 10px;
+	font-family: 'Exo', sans-serif;
+}
+
+nav ul li a:hover{
+	text-decoration: none;
+}
+
+.rosado{
+	background: pink;			
+}
+
+.amarillo{
+	background: yellow;
+	margin: 0;
+}
+
+#btn-menu{	
+	display: none;		
+}
+
+#menubtn{
+	padding: 10px;	
+}
+
+
+@media(max-width:900px) {
+	header, nav{
+		width: 100%;
+	}	
+}
+
+@media (max-width:500px) {
+	nav{
+		display: none;
+	}
+	nav ul li{
+		display: block;
+	}
+	#btn-menu{
+		display: block;
+		cursor: pointer;	
+		text-align: center;	
+		padding: 10px;
+	}
+}
+
+
 
