@@ -47,13 +47,22 @@ nav ul li a:hover{
 	text-decoration: none;
 }
 
-.rosado{
-	background: pink;			
+.padding-perso{
+	padding: 10px;		
 }
 
-.amarillo{
-	background: yellow;
-	margin: 0;
+.personal-estilo h6{
+	text-align: left;
+	font-size: 2em;
+	color: black;
+}
+
+.formato-trio span{	
+	display: block;
+	text-align: center;
+	font-size: 50px;
+	color: #3daedb;
+	margin-top: 5px;
 }
 
 #btn-menu{	
@@ -64,11 +73,37 @@ nav ul li a:hover{
 	padding: 10px;	
 }
 
+#banner{
+	margin-top: 20px;
+	display: flex;
+	justify-content:space-around;
+	background: #1595A3;
+	padding: 10px;
+	color: white;
+}
+
+@media (max-width:1199px) {
+	.personal-estilo h6, p{
+		text-align: center;
+	}
+}
 
 @media(max-width:900px) {
 	header, nav{
 		width: 100%;
 	}	
+}
+
+@media (max-width:670px) {
+	#banner{			
+		flex-direction:column;
+	}
+	#banner h3,p{
+		text-align: center;
+	}
+	.formato-trio{
+		margin-bottom: 20px;
+	}
 }
 
 @media (max-width:500px) {
@@ -83,8 +118,11 @@ nav ul li a:hover{
 		cursor: pointer;	
 		text-align: center;	
 		padding: 10px;
-	}
+	}	
+	
 }
+
+
 
 
 
