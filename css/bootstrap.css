@@ -1417,7 +1417,8 @@ a.bg-danger:focus {
 ul,
 ol {
   margin-top: 0;
-  margin-bottom: 10px;
+	/*Se modifica el valor a 0*/
+  margin-bottom: 0;
 }
 ul ul,
 ol ul,
